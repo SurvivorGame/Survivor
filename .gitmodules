@@ -1,6 +1,11 @@
 [submodule "SurvivorCore"]
 	path = SurvivorCore
+	url = git@github.com:SurvivorGame/SurvivorCore.git
 
-[submodule "SurvivorCore"]
+[submodule "SurvivorServer"]
 	path = SurvivorServer
+	url = git@github.com:SurvivorGame/SurvivorServer.git
 
+[submodule "PluginFramework"]
+	path = PluginFramework
+	url = git@github.com:sunxfancy/PluginFramework.git
