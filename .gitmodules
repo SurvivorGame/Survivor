@@ -1,0 +1,6 @@
+[submodule "SurvivorCore"]
+	path = SurvivorCore
+
+[submodule "SurvivorCore"]
+	path = SurvivorServer
+
