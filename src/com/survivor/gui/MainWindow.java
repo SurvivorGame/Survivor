@@ -51,10 +51,9 @@ public class MainWindow extends SimpleApplication implements MainWindowInterface
 
     public void Start(){
         /** 初始化App及应用窗口 */
-        showSettings = false;
+        showSettings = true;
         AppSettings settings = new AppSettings(true);
-        settings.setTitle("My Cool Game");
-        settings.setSettingsDialogImage("assets/Interface/logo.jpg");
+        settings.setSettingsDialogImage("Interface/logo.jpg");
         try {
             settings.load("Survivor.prop");
         } catch (BackingStoreException e) {
@@ -113,11 +112,11 @@ public class MainWindow extends SimpleApplication implements MainWindowInterface
     }
 
     private void makeSky() {
-        Texture back = assetManager.loadTexture("assets/images/blue-sky/bluesky_back.jpg");
-        Texture front = assetManager.loadTexture("assets/images/blue-sky/bluesky_front.jpg");
-        Texture up = assetManager.loadTexture("assets/images/blue-sky/bluesky_top.jpg");
-        Texture left = assetManager.loadTexture("assets/images/blue-sky/bluesky_left.jpg");
-        Texture right = assetManager.loadTexture("assets/images/blue-sky/bluesky_right.jpg");
+        Texture back = assetManager.loadTexture("Textures/blue-sky/bluesky_back.jpg");
+        Texture front = assetManager.loadTexture("Textures/blue-sky/bluesky_front.jpg");
+        Texture up = assetManager.loadTexture("Textures/blue-sky/bluesky_top.jpg");
+        Texture left = assetManager.loadTexture("Textures/blue-sky/bluesky_left.jpg");
+        Texture right = assetManager.loadTexture("Textures/blue-sky/bluesky_right.jpg");
         rootNode.attachChild(SkyFactory.createSky(
                 assetManager,right, left, back,  front, up, up));
     }
@@ -135,7 +134,7 @@ public class MainWindow extends SimpleApplication implements MainWindowInterface
 
     private void makeGround() {
         mainTexture = assetManager.loadTexture(
-                "assets/images/texture.png");
+                "Textures/blocks/gravel.png");
         Material mat = new Material(assetManager,
                 MATDEFS_LIGHTING);
         mat.setFloat("Shininess", 105f);
