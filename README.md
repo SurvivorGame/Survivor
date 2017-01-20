@@ -15,7 +15,7 @@ mvn build
 ```
 
 The main project is made with ant, which is limited by JMonkey's IDE. We use JMonkeyEngine 3.0.10 version. Please download the SDK first:
-![Download link](https://github.com/jMonkeyEngine/sdk/releases/download/stable/jmonkeyplatform-linux-x64.sh)
+[Download link](https://github.com/jMonkeyEngine/sdk/releases/download/stable/jmonkeyplatform-linux-x64.sh)
 
 Then use JMonkeyEngine IDE opens this project and choose build action.
 You can also use command-line:
