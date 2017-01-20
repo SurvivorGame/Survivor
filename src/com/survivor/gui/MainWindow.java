@@ -53,7 +53,7 @@ public class MainWindow extends SimpleApplication implements MainWindowInterface
         /** 初始化App及应用窗口 */
         showSettings = true;
         AppSettings settings = new AppSettings(true);
-        settings.setSettingsDialogImage("Interface/logo.jpg");
+        settings.setSettingsDialogImage("Textures/logo.jpg");
         try {
             settings.load("Survivor.prop");
         } catch (BackingStoreException e) {
